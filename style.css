@@ -1,0 +1,81 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 32PX;
+    padding: 1em;
+  }
+
+  .calculator{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #4390bc;
+  }
+
+  .calculator-screen{
+    background-color: aliceblue;
+    border: 1px solid black;
+    height: 75px;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+ .lastOpScreen{
+    min-height: 32px;
+    font-size: 20px;
+  } 
+
+  .currOpScreen{
+    min-height: 64px;
+    font-size: 40px;
+  }
+
+  .calculator-keys{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    /* border-radius: 1px solid black; */
+  }
+
+  button{
+    width: 66px;
+    height: 66px;
+    border-radius: 5px;
+    font-size:20px;
+  }
+ .op-button{
+    background-color: #62fcaf;
+  }
+  
+  .clrDelKeys{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .all-clear {
+  width: 150px;
+  }
+  
+  .delete{
+    width: 150px;
+    background-color: #ce2029;
+  }
